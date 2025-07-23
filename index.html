@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mario García | Portfolio Multimedia</title>
+    <meta
+      name="description"
+      content="Portfolio profesional de Mario García - Fotografía y producción audiovisual"
+    />
+    <link rel="icon" href="portada.JPG" />
+  </head>
+  <body>
+    <!-- CABECERA CON TÍTULOS PRINCIPALES -->
+    <header>
+      <h1>PORTFOLIO AUDIOVISUAL</h1>
+      <h2>MARIO GARCÍA TORRALBO</h2>
+
+      <!-- IMAGEN PRINCIPAL SIN TEXTO -->
+      <figure>
+        <img src="portada.JPG" alt="" width="160" />
+      </figure>
+
+      <!-- MENÚ DE NAVEGACIÓN -->
+      <nav aria-label="Menú principal">
+        <ul>
+          <li><a href="#fotos">Fotografía</a></li>
+          <li><a href="#videos">Videoclips</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+      <!-- SECCIÓN FOTOGRAFÍA -->
+      <section id="fotos">
+        <h2>Mi trabajo fotográfico</h2>
+        <figure>
+          <img src="Captura de pantalla (23).jpg" width="500" />
+        </figure>
+        <figure>
+          <img
+            src="Captura de pantalla (36).jpg"
+            alt="Paisaje natural al atardecer"
+            width="500"
+          />
+        </figure>
+        <figure>
+          <img
+            src="Foto gons.jpg"
+            alt="Paisaje natural al atardecer"
+            width="500"
+          />
+        </figure>
+        <figure>
+          <img
+            src="Foto Rodolfo Dominguez.png"
+            alt="Paisaje natural al atardecer"
+            width="500"
+          />
+        </figure>
+      </section>
+
+      <!-- SECCIÓN VIDEOS -->
+      <section id="videos">
+        <h2>Producciones audiovisuales</h2>
+
+        <!-- VIDEO 1 LOCAL -->
+        <article>
+          <h3>VULKANIA - Trabajo experimental con música techno</h3>
+          <video width="800" controls>
+            <source src="VULKANIA.mp4" type="video/mp4" />
+          </video>
+        </article>
+
+        <!-- VIDEO 2 LOCAL -->
+        <article>
+          <h3>Reportaje para el CSIC</h3>
+          <video width="800" controls>
+            <source src="CSIC FINAL.mp4" type="video/mp4" />
+          </video>
+        </article>
+
+        <!-- VIDEO 3 (YouTube) -->
+        <article>
+          <h3>SAFARI BLOOM - MAHMOOD</h3>
+          <iframe
+            width="800"
+            height="450"
+            src="MAHMOOD VIDEOCLIP OFICIAL.mp4"
+            title="SAFARI BLOOM - MAHMOOD"
+            allowfullscreen
+          ></iframe>
+        </article>
+      </section>
+
+      <!-- FORMULARIO DE CONTACTO -->
+      <section id="contacto">
+        <h2>Contacto profesional</h2>
+        <form action="#" method="post">
+          <!-- MAPA DE GOOGLE -->
+          <h3 id="ubicacion">¿Dónde estoy?</h3>
+          <p
+            style="text-align: center; font-weight: bold; margin-bottom: 0.5em"
+          >
+            <span id="ubicacion-descripcion">Valladolid, Castilla y León</span>
+          </p>
+            <iframe
+              title="Mapa centrado en el centro de Valladolid, Castilla y León"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2928.085014625896!2d-4.728497284678067!3d41.652950179239675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd471298e7a6e6d7%3A0x5d0d4300fdf1ef94!2sPlaza%20Mayor%2C%2047001%20Valladolid!5e0!3m2!1ses!2ses!4v1721735120000!5m2!1ses!2ses"
+              width="100%"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              aria-describedby="ubicacion-descripcion"
+            ></iframe>
+          </div>
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="tipo">Tipo de consulta:</label>
+          <select id="tipo" name="tipo">
+            <option value="foto">Sesión fotográfica</option>
+            <option value="video">Producción audiovisual</option>
+            <option value="otro">Otros</option>
+          </select>
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+          <button type="submit">Enviar consulta</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+      <address>
+        Contacto profesional:
+        <a href="mailto:mariogt98@gmail.com">mariogt98@gmail.com</a><br />
+        Teléfono: <a href="tel:+34655199664">655 199 664</a>
+      </address>
+      <p>&copy; 2023 Mario García Torralbo. Todos los derechos reservados.</p>
+      <p>
+        <a href="#" aria-label="Instagram">Instagram</a> |
+        <a href="#" aria-label="Vimeo">Vimeo</a> |
+        <a
+          href="https://www.linkedin.com/in/mario-garc%C3%ADa-torralbo-9228b81a8/"
+          aria-label="LinkedIn"
+          >LinkedIn</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
